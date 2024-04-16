@@ -1,0 +1,26 @@
+from tkinter import *
+root=Tk()
+root.geometry("600x400")
+root.title("tksum")
+root.configure(bg="green")
+root.resizable(False,False)
+l1=Label(root, text="Enter the first number:")
+l1.pack()
+t1=Entry(root)
+t1.pack()
+l2=Label(root, text="Enter the second number:")
+l2.pack()
+
+t2=Entry(root)
+t2.pack()
+def f1():
+    num1=int(t1.get())
+    num2=int(t2.get())
+    result=num1+num2
+    a.set(result) 
+b1=Button(root,text="Sum",command=f1)
+b1.pack()
+a=StringVar()
+t3=Entry(root,textvariable=a) 
+t3.pack()
+root.mainloop()

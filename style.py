@@ -1,0 +1,13 @@
+from tkinter import*
+root=Tk()
+root.geometry("500x400")
+root.title("Factorial")
+root.configure(bg="pink")
+root.resizable(False,False)
+l1=Label(root,text="Enter the name",font="Arial 30 bold ",fg="red",bg="blue",padx=50,pady=100,cursor="plus")#height=5,width=20,anchor=NW)
+l1.pack()
+t1=Entry(root,font="Arial 30 bold ",fg="red",bg="yellow",width=20,show=".",justify=CENTER,cursor="circle")
+t1.pack()
+b1=Button(root,text="submit",font="Arial 30 bold ",fg="red",bg="green",width=20,activeforeground="blue",activebackground="yellow")
+b1.pack()
+root.mainloop()
